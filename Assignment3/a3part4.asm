@@ -374,42 +374,6 @@ start:
 		return_start:
 			rjmp start
 
-/*
-	;=======test_high_low======
-	test_count_higher:
-		ldi r16, 0
-		ldi r17, 0 ;column
-		push r16
-		push r17
-		rcall lcd_gotoxy
-		pop r17
-		pop r16
-
-		ldi r16, 'H'
-		push r16
-		rcall lcd_putchar
-		pop r16
-
-		rjmp start
-
-	test_count_lower:
-		ldi r16, 0
-		ldi r17, 0 ;column
-		push r16
-		push r17
-		rcall lcd_gotoxy
-		pop r17
-		pop r16
-
-		ldi r16, 'L'
-		push r16
-		rcall lcd_putchar
-		pop r16
-
-		rjmp start
-*/
-
-
 stop:
     rjmp stop
 
